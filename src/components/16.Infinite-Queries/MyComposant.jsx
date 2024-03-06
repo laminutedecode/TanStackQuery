@@ -10,7 +10,7 @@ import axios from 'axios';
 
 export default function MyComponent() {
   const fetchPosts = async ({ pageParam = 1 }) => {
-    const response = await axios.get(`https://api.example.com/posts?page=${pageParam}`);
+    const response = await axios.get(`https://jsonplaceholder.typicode/posts?page=${pageParam}`);
     return response.data;
   };
 
